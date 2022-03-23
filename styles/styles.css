@@ -1,0 +1,17 @@
+:root
+{
+    --sm:1.2rem;
+    --md:1.6rem;
+    --lg:2rem;
+    --header-size:2.4rem;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%; /* Para que 1rem = 10px */
+}

@@ -10,6 +10,7 @@
     --grey:#BABABA;
     --off-white:#FAF8F7;
     --just-white:#FFFFFF;
+    --shadow-color: rgba(89, 73, 30, 0.16);
 
     /* Font sizes */
     --sm:1.2rem;
@@ -96,10 +97,10 @@ header .title-container .header-button
     height: 48px;
     padding: 16px;
     border-radius: 4px;
-    box-shadow: 0 0 4px gray;
     font-size: var(--md);
     font-weight: 700;
     text-decoration: none;
     color: var(--warm-black);
     background-color: var(--off-white);
+    box-shadow: 0 4px 8px var(--shadow-color);
 }

@@ -39,3 +39,67 @@ html
     font-family: 'DM Sans', sans-serif;
     /* font-family: 'Inter', sans-serif; */
 }
+header
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    padding: 0 16px;
+    background: linear-gradient(207.8deg, var(--warm-black) 16%, var(--bitcoin-orange) 100%);
+}
+header .logo
+{
+    width: 150px;
+    height: 24px;
+    margin: 36px 0 12px;
+}
+header .logo img
+{
+    width: 100%;
+    height: 100%;
+}
+header .title-container
+{
+    position: relative;
+    bottom: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+header .title-container h1
+{
+    font-size: var(--h1-size);
+    line-height: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--just-white);
+}
+header .title-container p
+{
+    font-size: var(--md);
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: var(--soft-orange);
+}
+header .title-container .header-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px gray;
+    font-size: var(--md);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+}

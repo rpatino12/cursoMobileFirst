@@ -104,3 +104,13 @@ header .title-container .header-button
     background-color: var(--off-white);
     box-shadow: 0 4px 8px var(--shadow-color);
 }
+.title-container .header-button span
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.title-container .header-button span img
+{
+    width: 100%;
+}

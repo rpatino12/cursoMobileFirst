@@ -15,3 +15,8 @@ html
 {
     font-size: 62.5%; /* Para que 1rem = 10px */
 }
+body
+{
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+}

@@ -11,6 +11,7 @@
     --off-white:#FAF8F7;
     --just-white:#FFFFFF;
     --shadow-color: rgba(89, 73, 30, 0.16);
+    --font-color: #757575;
 
     /* Font sizes */
     --sm:1.2rem;
@@ -113,4 +114,48 @@ header .title-container .header-button
 .title-container .header-button span img
 {
     width: 100%;
+}
+main
+{
+    width: 100%;
+    min-width: 320px;
+    padding-top: 20px;
+    background-color: var(--off-white);
+}
+main .exchange-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 28px 16px 0;   
+}
+main .exchange-container .background
+{
+    width: 195px;
+    height: 195px;
+    background: url('../assets/images/bitcoin.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 40px;
+}
+main .exchange-container .exchange-container-title
+{
+    text-align: center;
+}
+.exchange-container .exchange-container-title h2
+{
+    font-size: var(--h1-size);
+    line-height: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--warm-black);
+}
+.exchange-container .exchange-container-title p
+{
+    font-size: var(--md);
+    font-weight: 500;
+    margin-bottom: 48px;
+    color: var(--font-color);
 }

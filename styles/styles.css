@@ -192,6 +192,8 @@ main .commissions-table .commissions-table-container
 main .currency-table .currency-table-container .next-button,
 main .commissions-table .commissions-table-container .next-button
 {
+    position: absolute;
+    right: calc(50% - 140px);
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -204,6 +206,7 @@ main .commissions-table .commissions-table-container .next-button
 main .commissions-table .commissions-table-container .next-button
 {
     order: -1;
+    left: calc(50% - 140px);
     transform: rotate(90deg);
 }
 main .currency-table .currency-table-container table,

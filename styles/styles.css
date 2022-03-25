@@ -183,6 +183,29 @@ main .commissions-table .commissions-table--title
 {
     color: var(--secondary-blue);
 }
+main .currency-table .currency-table-container,
+main .commissions-table .commissions-table-container
+{
+    display: flex;
+    align-items: center;
+}
+main .currency-table .currency-table-container .next-button,
+main .commissions-table .commissions-table-container .next-button
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../assets/icons/arrow-down-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-90deg);
+}
+main .commissions-table .commissions-table-container .next-button
+{
+    order: -1;
+    transform: rotate(90deg);
+}
 main .currency-table .currency-table-container table,
 main .commissions-table .commissions-table-container table
 {

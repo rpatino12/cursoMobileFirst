@@ -117,6 +117,9 @@ header .title-container .header-button
 }
 main
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     min-width: 320px;
     padding-top: 20px;
@@ -180,6 +183,11 @@ main .commissions-table .commissions-table--title
 {
     color: var(--secondary-blue);
 }
+main .currency-table .currency-table-container table,
+main .commissions-table .commissions-table-container table
+{
+    width: 100%;
+}
 main .currency-table .currency-table-container tr,
 main .commissions-table .commissions-table-container tr
 {
@@ -194,7 +202,6 @@ main .commissions-table .commissions-table-container tr
 main .currency-table .currency-table-container tr td,
 main .commissions-table .commissions-table-container tr td
 {
-    width: 100px;
     padding: 0 12px;
 }
 main .currency-table .currency-table-container .table-right-column,
@@ -202,6 +209,7 @@ main .commissions-table .commissions-table-container .table-right-column
 {
     font-size: var(--md);
     font-weight: 400;
+    text-align: center;
     color: var(--font-color);
 }
 main .currency-table .currency-table-container .table-right-column span
@@ -221,19 +229,19 @@ main .currency-table .currency-table-container tr:nth-child(2) .table-right-colu
 }
 main .table-top-left
 {
-    border-radius: 4px 0 0 0;
+    border-radius: 8px 0 0 0;
 }
 main .table-top-right
 {
-    border-radius: 0 4px 0 0;
+    border-radius: 0 8px 0 0;
 }
 main .table-bottom-right
 {
-    border-radius: 0 0 4px 0;
+    border-radius: 0 0 8px 0;
 }
 main .table-bottom-left
 {
-    border-radius: 0 0 0 4px;
+    border-radius: 0 0 0 8px;
 }
 main .currency-table .currency-table--date,
 main .commissions-table .commissions-table--date
@@ -242,7 +250,7 @@ main .commissions-table .commissions-table--date
     width: fit-content;
     padding: 8px;
     margin: 16px auto;
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: 'Inter', sans-serif;
     font-size: var(--sm);
     background-color: var(--soft-orange);

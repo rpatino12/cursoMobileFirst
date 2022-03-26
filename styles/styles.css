@@ -286,3 +286,83 @@ main .commissions-table .commissions-table--date
 {
     background-color: var(--soft-blue);
 }
+main .exchange-container .section-logo
+{
+    position: relative;
+    bottom: -16px;
+}
+
+main .description-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 64px 16px 0;
+    background-color: var(--warm-black);
+}
+main .description-container .description-container-title
+{
+    text-align: center;
+}
+main .description-container-title h2
+{
+    font-size: var(--h1-size);
+    line-height: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--just-white);
+}
+main .description-container-title p
+{
+    font-size: var(--md);
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: var(--grey);
+}
+main .description-container .cards-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 48px;
+}
+main .description-container .card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 288px;
+    height: 152px;
+    padding: 16px 16px 20px;
+    border-radius: 4px;
+    text-overflow: hidden;
+    background-color: var(--black);
+    box-shadow: 0 4px 12px black;
+}
+.description-container .card .card-icon
+{
+    width: 20px;
+    height: 20px;
+}
+.description-container .card .card-icon img
+{
+    width: 100%;
+}
+.description-container .card .card-title
+{
+    font-size: var(--h2-size);
+    line-height: 1.8rem;
+    font-weight: 700;
+    color: var(--just-white);
+}
+.description-container .card .card-info
+{
+    font-size: var(--md);
+    font-weight: 500;
+    color: var(--grey);
+}

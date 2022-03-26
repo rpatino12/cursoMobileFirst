@@ -366,3 +366,23 @@ main .description-container .card
     font-weight: 500;
     color: var(--grey);
 }
+
+main .image-container
+{
+    width: 100%;
+    height: 388px;
+    text-align: center;
+    background-color: var(--bitcoin-orange);
+    background-image: url('../assets/images/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+main .image-container h2
+{
+    font-size: var(--h1-size);
+    line-height: 2.6rem;
+    font-weight: 700;
+    margin-top: 64px;
+    color: var(--just-white);
+}

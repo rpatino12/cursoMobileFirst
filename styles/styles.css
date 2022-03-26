@@ -372,7 +372,6 @@ main .image-container
     width: 100%;
     height: 388px;
     text-align: center;
-    background-color: var(--bitcoin-orange);
     background-image: url('../assets/images/bitcoinbaby.jpg');
     background-repeat: no-repeat;
     background-size: contain;

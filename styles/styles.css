@@ -497,3 +497,41 @@ main .plans-container-title p
     background-size: contain;
     background-position: center;
 }
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 40px;
+    background-color: var(--bitcoin-orange);
+}
+footer .footer-links
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    width: 30%;
+    min-width: 100px;
+    list-style: none;
+}
+footer .footer-links li a
+{
+    font-size: var(--md);
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: var(--just-white);    
+}
+footer .footer-logo-container
+{
+    width: 64px;
+    height: 52px;
+    background: url('../assets/images/batatabit-logo2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

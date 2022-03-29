@@ -168,7 +168,7 @@ main .tables-container
 {
     display: flex;
     align-items: center;
-    width: 225px;
+    width: 60%;
     max-width: fit-content;
     height: 280px;
     overflow-x: scroll;
@@ -341,7 +341,7 @@ main .description-container .cards-container
     justify-content: center;
     gap: 16px;
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin-bottom: 48px;
 }
 main .description-container .card
@@ -384,10 +384,10 @@ main .description-container .card
 main .image-container
 {
     width: 100%;
-    max-width: 432px;
+    /* max-width: 432px; */
     height: 387px;
     text-align: center;
-    background-image: url('../assets/images/bitcoinbaby.jpg');
+    background-image: url('../assets/images/bitcoinbaby_2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

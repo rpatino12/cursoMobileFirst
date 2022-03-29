@@ -170,7 +170,7 @@ main .tables-container
     align-items: center;
     width: 225px;
     max-width: fit-content;
-    height: 264px;
+    height: 280px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;

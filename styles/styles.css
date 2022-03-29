@@ -494,6 +494,7 @@ main .plans-container-title p
     font-weight: 700;
     border-radius: 4px;
     cursor: pointer;
+    color: var(--warm-black);
     background-color: var(--off-white);
     border: 2px solid var(--bitcoin-orange);
 }

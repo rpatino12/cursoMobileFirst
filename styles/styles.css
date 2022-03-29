@@ -175,6 +175,22 @@ main .tables-container
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
+main .tables-container::-webkit-scrollbar,
+.plans-container .cards-container::-webkit-scrollbar
+{
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--soft-orange);
+}
+main .tables-container::-webkit-scrollbar-thumb,
+.plans-container .cards-container::-webkit-scrollbar-thumb
+{
+    border-radius: 4px;
+    background-color: var(--bitcoin-orange);
+}
+
+
 main .currency-table, 
 main .commissions-table
 {

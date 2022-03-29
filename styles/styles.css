@@ -132,7 +132,7 @@ main .exchange-container
     align-items: center;
     width: 100%;
     max-width: 900px;
-    padding: 28px 16px 0;   
+    padding: 28px 0 0;   
 }
 main .exchange-container .background
 {
@@ -147,6 +147,7 @@ main .exchange-container .background
 main .exchange-container .exchange-container-title
 {
     text-align: center;
+    padding: 0 16px;
 }
 .exchange-container .exchange-container-title h2
 {
@@ -160,16 +161,25 @@ main .exchange-container .exchange-container-title
 {
     font-size: var(--md);
     font-weight: 500;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
     color: var(--font-color);
+}
+main .tables-container
+{
+    display: flex;
+    align-items: center;
+    width: 225px;
+    max-width: fit-content;
+    height: 264px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 main .currency-table, 
 main .commissions-table
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
+    scroll-snap-align: center;
+    width: 100%;
     min-width: 225px;
     max-width: 500px;
 }
@@ -180,8 +190,9 @@ main .commissions-table .commissions-table--title
     font-size: var(--h2-size);
     font-weight: 700;
     color: #FF9536;
-    margin-bottom: 12px;
-    padding-left: 24px;
+    width: fit-content;
+    margin: 0 auto 12px;
+    /* padding-left: 24px; */
 }
 main .commissions-table .commissions-table--title
 {
@@ -193,6 +204,8 @@ main .commissions-table .commissions-table-container
     display: grid;
     grid-template-columns: 100px 100px;
     grid-template-rows: repeat(4, 40px);
+    width: fit-content;
+    margin: 0 auto;
 }
 main .currency-table-container .currency-table-item:first-child,
 main .commissions-table-container .commissions-table-item:first-child
@@ -403,16 +416,23 @@ main .plans-container-title p
     margin-bottom: 36px;
     color: var(--font-color);
 }
-.plans-container .cards-container
+.plans-container .cards-container /* Slider con scroll horizontal */
 {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 8px;
     width: 100%;
+    max-width: fit-content;
+    height: 290px;
+    padding: 0 8px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity; /* Sirve para que el slide quede presentando una tarjeta en especifico y no quede entre dos tarjetas, funciona en conjunto con en el scroll-snap-align del elemento hijo */
 }
 .plans-container .cards-container .card
 {
     position: relative;
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;

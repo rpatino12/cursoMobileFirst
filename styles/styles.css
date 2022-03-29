@@ -379,11 +379,13 @@ main .plans-container
     align-items: center;
     width: 100%;
     max-width: 900px;
-    padding: 64px 16px;   
+    padding: 64px 0;   
 }
 
 main .plans-container .plans-container-title
 {
+    width: 100%;
+    padding: 0 16px;
     text-align: center;
 }
 main .plans-container-title h2
@@ -405,23 +407,26 @@ main .plans-container-title p
 {
     display: flex;
     justify-content: center;
+    gap: 8px;
     width: 100%;
 }
 .plans-container .cards-container .card
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 190px;
     height: 248px;
-    padding: 0 16px;
+    padding: 0 16px 24px;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--shadow-color);
     background-color: var(--just-white);
 }
 .plans-container .cards-container .card .card-title
 {
-    position: relative;
+    position: absolute;
     top: -15px;
     height: 30px;
     padding: 8px;
@@ -433,13 +438,17 @@ main .plans-container-title p
     color: var(--just-white);
     background-color: var(--bitcoin-orange);
 }
+.plans-container .cards-container .card.monthly .card-title
+{
+    background-color: var(--secondary-blue);
+}
 .plans-container .cards-container .card .card-info
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 16px;
+    margin: 32px 0 16px;
 }
 .plans-container .cards-container .card .card-info p:first-child
 {
@@ -480,12 +489,17 @@ main .plans-container-title p
     width: 152px;
     height: 48px;
     padding: 0 16px;
+    font-family: 'DM Sans', sans-serif;
     font-size: var(--md);
     font-weight: 700;
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--off-white);
     border: 2px solid var(--bitcoin-orange);
+}
+.plans-container .cards-container .card.monthly .card-button
+{
+    border: 2px solid var(--secondary-blue);
 }
 .plans-container .cards-container .card .card-button span
 {
@@ -496,6 +510,10 @@ main .plans-container-title p
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+.plans-container .cards-container .card.monthly .card-button span
+{
+    background: url('../assets/icons/arrow-right-icon2.svg');
 }
 
 footer

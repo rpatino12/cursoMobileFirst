@@ -1,0 +1,10 @@
+main .tables-container
+{
+    justify-content: center;
+    overflow-x: unset;
+}
+.plans-container .cards-container /* Slider con scroll horizontal */
+{
+    justify-content: center;
+    overflow-x: unset;
+}

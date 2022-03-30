@@ -1,7 +1,7 @@
 :root
 {
     /* Colors */
-    --bitcoin-orange:#F7931A;
+    --bitcoin-orange: #F7931A;
     --soft-orange:#FFE9D5;
     --secondary-blue:#1A9AF7;
     --soft-blue:#E7F5FF;
@@ -11,7 +11,7 @@
     --off-white:#FAF8F7;
     --just-white:#FFFFFF;
     --shadow-color: rgba(89, 73, 30, 0.16);
-    --font-color: #757575;
+    --font-color: #575757;
 
     /* Font sizes */
     --sm:1.2rem;
@@ -114,6 +114,7 @@ header .title-container .header-button
 .title-container .header-button span img
 {
     width: 100%;
+    height: 100%;
 }
 main
 {
@@ -168,7 +169,7 @@ main .tables-container
 {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 65%;
     max-width: fit-content;
     height: 280px;
     overflow-x: scroll;
@@ -205,7 +206,7 @@ main .commissions-table .commissions-table--title
     align-self: flex-start;
     font-size: var(--h2-size);
     font-weight: 700;
-    color: #FF9536;
+    color: var(--bitcoin-orange);
     width: fit-content;
     margin: 0 auto 12px;
     /* padding-left: 24px; */
@@ -254,7 +255,7 @@ main .commissions-table-container .commissions-table-item
     font-weight: 500;
     text-justify: center;
     border: 1px solid var(--off-white);
-    color: #B5B0AC;
+    color: var(--font-color);
     background-color: var(--just-white);
 }
 main .currency-table-container .currency-table-item.right-column,
@@ -303,7 +304,14 @@ main .commissions-table .commissions-table--date
 main .exchange-container .section-logo
 {
     position: relative;
+    width: 42px;
+    height: 26px;
     bottom: -16px;
+}
+main .exchange-container .section-logo img
+{
+    width: 100%;
+    height: 100%;
 }
 
 main .description-container
@@ -366,6 +374,7 @@ main .description-container .card
 .description-container .card .card-icon img
 {
     width: 100%;
+    height: 100%;
 }
 .description-container .card .card-title
 {
@@ -387,7 +396,7 @@ main .image-container
     /* max-width: 432px; */
     height: 387px;
     text-align: center;
-    background-image: url('../assets/images/bitcoinbaby_2x.jpg');
+    background-image: url('../assets/images/bitcoinbaby.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
